@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Central do Imigrante Tech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- HEADER SUPERIOR -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <div class="logo">Central do Imigrante Tech</div>
+        <div class="topbar-env">Dashboard Geral</div>
+      </div>
+      <div class="topbar-right">
+        <button class="topbar-btn" data-route="/notificacoes">
+          🔔 <span class="badge" id="badge-notificacoes">3</span>
+        </button>
+        <button class="topbar-btn" data-route="/suporte">
+          Ajuda
+        </button>
+        <div class="user-menu">
+          <span class="user-name">Olá, Edvaldo</span>
+          <div class="user-avatar">EJ</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- LAYOUT: SIDEBAR + CONTEÚDO -->
+    <div class="layout">
+      <!-- SIDEBAR PRINCIPAL -->
+      <nav class="sidebar">
+        <div class="sidebar-section">
+          <div class="sidebar-title">Navegação</div>
+          <button class="sidebar-link" data-route="/dashboard">🏠 Início</button>
+          <button class="sidebar-link" data-route="/casos">📁 Casos</button>
+          <button class="sidebar-link" data-route="/tarefas">✅ Tarefas</button>
+          <button class="sidebar-link" data-route="/documentos">🗂 Documentos</button>
+          <button class="sidebar-link" data-route="/calendario">📅 Calendário</button>
+          <button class="sidebar-link" data-route="/comunicacao">💬 Comunicação</button>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">Serviços</div>
+          <button class="sidebar-link" data-route="/fluxos">⚙ Fluxos Inteligentes</button>
+          <button class="sidebar-link" data-route="/traducoes">🌐 Traduções Certificadas</button>
+          <button class="sidebar-link" data-route="/divorcios">💔 Divórcios & Notificações</button>
+          <button class="sidebar-link" data-route="/marketplace">🧩 Marketplace</button>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">Gestão & IA</div>
+          <button class="sidebar-link" data-route="/analytics">📊 Analytics & BI</button>
+          <button class="sidebar-link" data-route="/qa">🛡 QA & Qualidade</button>
+          <button class="sidebar-link" data-route="/risco">🚨 Risco & Insights IA</button>
+          <button class="sidebar-link" data-route="/franquias">🏢 Franquias</button>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">Conhecimento</div>
+          <button class="sidebar-link" data-route="/treinamento">🎓 Treinamento</button>
+          <button class="sidebar-link" data-route="/biblioteca">📚 Biblioteca Legal</button>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">Administração</div>
+          <button class="sidebar-link" data-route="/financeiro">💵 Financeiro</button>
+          <button class="sidebar-link" data-route="/configuracoes">⚙ Configurações</button>
+          <button class="sidebar-link" data-route="/suporte">🛟 Suporte Técnico</button>
+          <button class="sidebar-link" data-route="/sair">🚪 Sair</button>
+        </div>
+      </nav>
+
+      <!-- ÁREA PRINCIPAL DE CONTEÚDO -->
+      <main id="main-content" class="content">
+        <!-- O JavaScript vai injetar aqui o HTML de cada "página" -->
+      </main>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
